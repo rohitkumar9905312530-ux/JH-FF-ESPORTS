@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JH FF Esports - Tournament</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #0b0b0b;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(90deg, #000, #111);
+      color: #f1c40f;
+      text-align: center;
+      padding: 25px 10px;
+    }
+    header h1 {
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 16px;
+      color: #ddd;
+      margin-top: 5px;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    .card h2 {
+      color: #f1c40f;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 8px;
+    }
+    .card p {
+      margin: 8px 0;
+      line-height: 1.5;
+      color: #eee;
+    }
+    .highlight {
+      color: #f1c40f;
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      color: #f1c40f;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+    }
+    input[type="file"] {
+      background: #fff;
+      color: #000;
+    }
+    .btn {
+      background: #f1c40f;
+      color: #000;
+      padding: 12px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #d4ac0d;
+    }
+    img.qr {
+      display: block;
+      margin: 15px auto;
+      width: 200px;
+      border: 2px solid #f1c40f;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #000;
+      color: #888;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>JH FF ESPORTS</h1>
+  <p>Free Fire Tournament Registration</p>
+</header>
+
+<div class="container">
+
+  <!-- Tournament Info -->
+  <div class="card">
+    <h2>Tournament Information</h2>
+    <p><span class="highlight">Date:</span> September 29, 2025</p>
+    <p><span class="highlight">Time:</span> 1st Match – 12 PM | 2nd Match – 6 PM</p>
+    <p><span class="highlight">Total Players:</span> 48 Squads (192 Players)</p>
+    <p><span class="highlight">Entry Fee:</span> ₹200 per Squad</p>
+    <p><span class="highlight">Rule:</span> No hackers allowed</p>
+    <p><span class="highlight">Map:</span> Bermuda</p>
+    <p><span class="highlight">Prizes:</span><br>
+       🥇 1st Prize – ₹800 <br>
+       🥈 2nd Prize – ₹500 <br>
+       🥉 3rd Prize – ₹300
+    </p>
+    <p><i>Custom ID & Password will be shared on WhatsApp 10 minutes before the match.</i></p>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="card">
+    <h2>Registration Form</h2>
+    <form>
+      <label>Squad Name</label>
+      <input type="text" placeholder="Your Squad's Name" required>
+
+      <label>Choose Match Time</label>
+      <select required>
+        <option value="12pm">12:00 PM</option>
+        <option value="6pm">06:00 PM</option>
+      </select>
+
+      <label>WhatsApp Number</label>
+      <input type="text" placeholder="Your 10-digit WhatsApp number" required>
+
+      <h3 style="color:#f1c40f;margin-top:20px;">Players UID</h3>
+      <label>Player 1 FF UID</label>
+      <input type="text" required>
+      <label>Player 2 FF UID</label>
+      <input type="text" required>
+      <label>Player 3 FF UID</label>
+      <input type="text" required>
+      <label>Player 4 FF UID</label>
+      <input type="text" required>
+      <label>Substitute Player UID (Optional)</label>
+      <input type="text">
+
+      <h3 style="color:#f1c40f;margin-top:20px;">Entry Fee Payment: ₹200</h3>
+      <p>Scan the QR code below to pay the entry fee. After payment, upload the screenshot and submit.</p>
+      <img src="qr.png" alt="Payment QR Code" class="qr"> <!-- यहाँ अपना QR कोड image डालना -->
+      <p><b>UPI ID:</b> 8340139152@fam</p>
+
+      <label>Upload Payment Screenshot</label>
+      <input type="file" required>
+
+      <button class="btn" type="submit">Submit Registration</button>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 JH FF Esports. All rights reserved.
+</footer>
+
+</body>
+</html>
